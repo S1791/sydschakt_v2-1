@@ -1,0 +1,97 @@
+:root {
+  --yellow: #ffff00;
+  --red: red;
+  --black: #030303;
+  --white: white;
+  --home: <a href= "index.html" >Home</a>;
+  --contact: <a href= "contact.html" >Contact</a>;
+}
+
+* {
+  margin: 0;
+  font-family: "Crimson Pro", serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1200px;
+  width: 80%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav,
+header,
+main,
+section,
+div,
+footer {
+  display: flex;
+}
+
+nav {
+  background-color: var(--black);
+  /* height: 100px; */
+  flex-direction: row;
+  justify-content: right;
+}
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+    
+}
+
+#nav-items li {
+  padding: 10px 5px;
+  margin: 20px 0;
+}
+
+#nav-items li:last-child {
+  padding: 10px 5px;
+  margin-right: 10px;
+}
+
+header {
+  background-color: var(--yellow);
+  height: 200px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: var(--black);
+  height: 100px;
+  max-width: 1200px;
+  width: 80%;
+
+}
+
+h1 {
+  color: var(--black);
+  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
+}
+
+a {
+  color: var(--yellow);
+  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+}
