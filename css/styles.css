@@ -9,6 +9,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   font-family: "Roboto", serif;
   list-style: none;
   text-decoration: none;
@@ -17,43 +18,17 @@
 body {
   max-width: 1200px;
   width: 80%;
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
   margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav,
-header,
-main,
-section,
-div,
-footer {
-  display: flex;
-}
-
 nav {
-  background-color: var(--black);
+  display: flex;
+  /* background-color: var(--black); */
   /* height: 100px; */
   flex-direction: row;
   justify-content: right;
-}
-
-#nav-items {
-  display: flex;
-  flex-direction: row;
-    
-}
-
-#nav-items li {
-  padding: 10px 5px;
-  margin: 20px 10px;
-}
-
-#nav-items li:last-child {
-  padding: 10px 5px;
-  margin-right: 20px;
+  
 }
 
 header {
@@ -74,6 +49,97 @@ footer {
 
 }
 
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+      
+}
+
+#nav-items a {
+  padding: 10px 5px;
+  margin: 20px 10px;
+
+}
+
+#nav-items a:last-child {
+  margin-right: 20px;
+
+}
+
+#logotype {
+  padding: 10px;
+  
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+
+  width: 100%;
+  z-index: 100;
+  
+  /* width: 100%; */
+}
+
+.intro-cover {
+  background-image: url("/img/hero-text.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.hero-field {
+
+}
+
+.intro-left {
+  width: 60%;
+  height:300px;
+}
+
+.intro-right {
+  width: 40%;
+  height: 300px;
+}
+
+.nav-bar {
+  min-height: 50px;
+  /* background-color: var(--yellow); */
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1,
+.hero h3 {
+  padding: 20px 0;
+  color: var(--white);
+  text-align: center;
+}
+
+#index-hero {
+  background-image: url("/img/bigtruck-1024x731.jpg");
+}
+
 h1 {
   color: var(--black);
   font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
@@ -81,18 +147,10 @@ h1 {
 
 a {
   color: var(--yellow);
-  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
+  font-size: clamp(1rem, -0.3299rem + 4.9485vw, 2rem);
 }
 
-.hero {
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-}
 
-.hero-field {
-
-}
 
 .white {
   background-color: var(--white);

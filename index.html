@@ -35,25 +35,35 @@
 
   </head>
   <body>
-    <nav>
-      <!-- <ul id="nav-items">
-        <li>Hem</li>
-        <li>Kontakt</li>
-        <li>Mer</li>
-        <li></li>
-        <li></li>
-      </ul> -->
-      <nav-component></nav-component>
+    
+    <nav id="nav-placeholder">
+      <!-- <embed type="text/html" src="nav.html"> -->
+      <!-- <nav-component></nav-component> -->
+
     </nav>
+
     <header>
-      <img src="img/hero-text.png" width="50%">
-        <div class="hero">
-          <div class="yellow">F1</div>
-          <div class="white">F2</div>
+      <!-- <img src="img/hero-text.png"> -->
+        <div class="intro">
+          <div>
+            <div class="intro-cover"></div>
+        </div>
+        <div>
+          <div class="black intro-left"></div>
+          <div class="yellow intro-right"></div>
+        </div>
       </div>
+      
     </header>
+
     <main></main>
-    <section></section>
+
+    <section class="hero" id="index-hero">
+      <h3>Med entusiasm och framtidstro driver vi Sydschakt framåt<br>med samma ledord som när vi startade 1973.</h3>
+      <h1>Säkerhet, Miljö och Kvalitet!</h1>
+
+    </section>
+    
     <footer>
 
     </footer>
@@ -69,5 +79,17 @@
     async
     defer
     ></script>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script> $.get("nav.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script> $.get("footer.html", function(data){
+  $("#footer-placeholder").replaceWith(data);
+  });
+</script>
   </body>
 </html>
