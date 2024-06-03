@@ -33,8 +33,9 @@ class Nav extends HTMLElement {
     <nav>
       <ul id="nav-items">
         <li><a href="index.html">Hem</a></li>
+        <li><a href="#">Om oss</a></li>
         <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Medlem</a></li>
+        
       </ul>
     </nav>
     `

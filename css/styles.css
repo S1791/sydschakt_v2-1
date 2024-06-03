@@ -9,7 +9,7 @@
 
 * {
   margin: 0;
-  font-family: "Crimson Pro", serif;
+  font-family: "Roboto", serif;
   list-style: none;
   text-decoration: none;
 }
@@ -57,8 +57,11 @@ nav {
 }
 
 header {
-  background-color: var(--yellow);
-  height: 200px;
+  /* background-color: var(--yellow); */
+  /* height: 200px; */
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 footer {
@@ -79,6 +82,28 @@ h1 {
 a {
   color: var(--yellow);
   font-size: clamp(1rem, -0.3299rem + 4.9485vw, 3rem);
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+.hero-field {
+
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.black {
+  background-color: var(--black);
 }
 
 @media only screen and (max-width: 768px) {
