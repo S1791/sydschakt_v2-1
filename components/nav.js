@@ -30,16 +30,19 @@
 class Nav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <nav>
+    <div class="nav-items">
+      <div>
+        <img src="/img/sydschakt-logo.png" alt="sydschakt logotype" height="30px">
+      </div>
       <ul id="nav-items">
         <li><a href="index.html">Hem</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-        
+        <li><a href="about.html">Om oss</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
       </ul>
-    </nav>
-    `
+    </div>
+  `
   }
+
 
 }
 

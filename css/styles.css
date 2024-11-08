@@ -24,19 +24,21 @@ body {
 
 nav {
   display: flex;
-  /* background-color: var(--black); */
+  background-color: var(--yellow);
   /* height: 100px; */
   flex-direction: row;
   justify-content: right;
   
 }
 
+main {
+  padding: 50px 5%;
+  text-align: center;
+}
+
 header {
-  /* background-color: var(--yellow); */
-  /* height: 200px; */
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
+
+  
 }
 
 footer {
@@ -53,7 +55,12 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: var(--yellow);
       
+}
+
+#nav-items a {
+  color: var(--black);
 }
 
 #nav-items a {
@@ -72,35 +79,28 @@ footer {
   
 }
 
+#hero {
+  width: 80%;
+}
+
 .intro {
   display: flex;
-  flex-direction: column;
-  height: 300px;
-
-  width: 100%;
-  z-index: 100;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: var(--yellow);
   
-  /* width: 100%; */
 }
 
-.intro-cover {
-  background-image: url("/img/hero-text.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-}
-
-.hero-field {
-
-}
 
 .intro-left {
-  width: 60%;
+  width: 800px;
   height:300px;
 }
 
 .intro-right {
-  width: 40%;
+  width: 400px;
   height: 300px;
 }
 
@@ -116,6 +116,11 @@ footer {
   z-index: 1000;
   width: 100%;
   
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
 }
 
 .hero {
@@ -136,6 +141,20 @@ footer {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  position: sticky;
+  bottom: 0;
+  
+}
+
+.footer a {
+  padding: 10px 0;
+}
+
 #index-hero {
   background-image: url("/img/bigtruck-1024x731.jpg");
 }
@@ -149,7 +168,6 @@ a {
   color: var(--yellow);
   font-size: clamp(1rem, -0.3299rem + 4.9485vw, 2rem);
 }
-
 
 
 .white {
@@ -169,6 +187,11 @@ a {
     width: 100%;
   }
 
+  main {
+    padding: 50px 5%;
+    text-align: center;
+  }
+
   footer {
     width: 100%;
     right: 0;
@@ -177,4 +200,28 @@ a {
 }
 
 @media only screen and (max-width: 430px) {
+  body {
+    
+    /* width: 80%; */
+    margin: auto;
+    
+  }
+
+  main {
+    padding: 50px 5%;
+    text-align: center;
+  }
+
+  #hero {
+    width: 80%;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #nav-items {
+    
+  }
 }
