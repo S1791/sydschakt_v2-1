@@ -32,7 +32,7 @@ class Nav extends HTMLElement {
     this.innerHTML = `
     <div class="nav-bar">
     
-        <a href="/index.html"><img id="logotype" src="img/sydschakt-logo.png" alt="sydschakt logotype"></a>
+        <a href="index.html"><img id="logotype" src="img/sydschakt-logo.png" alt="sydschakt logotype"></a>
     
       <ul class="nav-items">
         <li><a href="index.html">Hem</a></li>
