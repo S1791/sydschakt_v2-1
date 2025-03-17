@@ -30,15 +30,21 @@
 class Nav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <div class="nav-items">
-      <div>
-        <img src="/img/sydschakt-logo.png" alt="sydschakt logotype" height="30px">
-      </div>
-      <ul id="nav-items">
+    <div class="nav-bar">
+    
+        <a href="/index.html"><img id="logotype" src="/img/sydschakt-logo.png" alt="sydschakt logotype"></a>
+    
+      <ul class="nav-items">
         <li><a href="index.html">Hem</a></li>
         <li><a href="about.html">Om oss</a></li>
         <li><a href="contact.html">Kontakt</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
     </div>
   `
   }
@@ -47,3 +53,16 @@ class Nav extends HTMLElement {
 }
 
 customElements.define("nav-component", Nav);
+
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="footer">
+      <a href="tel:042162053">Ring Bokningen: 042-162053</a>
+      <a href="mailto:bokning@sydschakt.se">Maila Bokningen</a>
+    </div>
+    `
+  }
+}
+
+customElements.define("footer-component", Footer);
