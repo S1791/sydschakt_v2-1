@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Galleri</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets and fonts -->
+
+    <link rel="stylesheet" href=css/styles.css>
+    <link rel="stylesheet" href=css/gallery.css>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    
+    
+    <nav>
+      <nav-component></nav-component>
+    </nav>
+
+    <div class="pages">
+      <a href="index.html"><img src="/img/sydschakt-logo.png" width="100px" alt="sydschakt logo"></a>
+      <a href="about.html">Om oss</a>
+      <a href="gallery.html">Galleri</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+
+    <main>
+      <div>
+        <h1>Galleri</h1>
+      </div>
+    </main>
+
+    <h2>Responsive Image Gallery</h2>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/img/units/bakgrund2.jpg">
+          <img src="/img/units/bakgrund2.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/img/units/bakgrund3.jpg">
+          <img src="/img/units/bakgrund3.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/img/units/bakgrund7.jpg">
+          <img src="/img/units/bakgrund7.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/img/units/MicrosoftTeams-image (4).png">
+          <img src="/img/units/MicrosoftTeams-image (4).png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+    <div style="padding:6px;">
+      <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    </div>
+    
+
+     
+    <footer><footer-component></footer-component>
+    </footer>
+
+
+    
+    <!-- <script src="" async defer></script> -->
+
+    
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script src="src/components.js" type="text/javascript" async defer></script>
+    
+    <script src="src/nav-menu.js" type="text/javascript" async defer></script>
+
+    <script src="src/hamburger.js" type="text/javascript" async defer></script>
+
+    
+  </body>
+</html>

@@ -60,39 +60,111 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    
+    
     <nav>
       <nav-component></nav-component>
     </nav>
 
+    <div class="pages">
+      <a href="index.html"><img src="/img/sydschakt-logo.png" width="100px" alt="sydschakt logo"></a>
+      <a href="about.html">Om oss</a>
+      <a href="gallery.html">Galleri</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+
     <main>
-      <div>
+      <div class="ct_single bg_yellow">
         <h1> Kontakta Sydschakt</h1>
       </div>
     </main>
-
-    <footer id="footer-placeholder"></footer>
-
-    <script
-    src="components/nav.js"
-    type="text/javascript"
-    async
-    defer
-    ></script>
     
-    <script src="" async defer></script>
+    
+      <div class="contacts">
+        <div class="contact" id="pk">
+          <img class="contact-photo" src="/img/ppl/shipman-northcutt-sgZX15Da8YE-unsplash.jpg" alt="paul koltai"/>
+          <div class="contact-info">
+            <h2>Paul Koltai</h2>
+            <h5>Platschef</h5>
+            <h3><a href="tel:042162052">042-162052</a></h3>
+            <h3><a href="tel:0766666939">0766-666 939</a></h3>
+            <h3><a href="mailto:paul@sydschakt.se">Maila mig</a></h3>
+        </div>
+        </div>
+        <div class="contact" id="kb">
+          <img class="contact-photo" src="/img/ppl/christian-buehner-84E44EdD18o-unsplash.jpg" alt="kim berntson"/>
+          <div class="contact-info">
+            <h2>Kim Berntson</h2>
+            <h5>Ekonomi & IT</h5>
+            <h3><a href="tel:042162053">042-162053</a></h3>
+            <h3><a href="tel:0766666939">0766-666 939</a></h3>
+            <h3><a href="mailto:kim@sydschakt.se">Maila mig</a></h3>
+        </div>
+        </div>
+        <div class="contact" id="po">
+          <img class="contact-photo" src="/img/ppl/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="peter ovik"/>
+          <div class="contact-info">
+            <h2>Peter Ovik</h2>
+            <h5>Trafikplanerare</h5>
+            <h3><a href="tel:04216205X">042-16205X</a></h3>
+            <h3><a href="tel:0766666939">0766-666 939</a></h3>
+            <h3><a href="mailto:peter@sydschakt.se">Maila mig</a></h3>
+        </div>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <div class="contact" id="pt">
+          <img class="contact-photo" src="/img/ppl/samuel-raita-RiDxDgHg7pw-unsplash.jpg" alt="patrik törngren"/>
+          <div class="contact-info">
+            <h2>Patrik Törngren</h2>
+            <h5>Trafikplanerare</h5>
+            <h3><a href="tel:04216205X">042-16205X</a></h3>
+            <h3><a href="tel:0766666939">0766-666 939</a></h3>
+            <h3><a href="mailto:patrik@sydschakt.se">Maila mig</a></h3>
+        </div>
+        </div>
+        <div class="contact" id="lj">
+          <img class="contact-photo" src="/img/ppl/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Lena Jacobsen"/>
+          <div class="contact-info">
+            <h2>Lena Jacobsen</h2>
+            <h5>Administration & Ekonomi</h5>
+            <h3><a href="tel:04216205X">042-16205X</a></h3>
+            <h3><a href="tel:0766666939">0766-666 939</a></h3>
+            <h3><a href="mailto:lena@sydschakt.se">Maila mig</a></h3>
+        </div>
+        </div>
+        <div class="contact" id="po">
+          <!-- <img class="contact-photo" src=""/> -->
+          <div class="contact-info">
+            <h2></h2>
+            <h5></h5>
+            <h3><a href="tel:04216205X"></a></h3>
+            <h3><a href="tel:0766666939"></a></h3>
+            <h3><a href="mailto:peter@sydschakt.se"></a></h3>
+        </div>
+        </div>
+      </div>
+
+      <div class="end"></div>
+    
+
+    <!-- <footer id="footer-placeholder"></footer> -->
+
+    <footer><footer-component></footer-component>
+    </footer>
+
+    
+    <!-- <script src="" async defer></script> -->
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script>
-      $.get("nav.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
 
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script>
-      $.get("footer.html", function (data) {
-        $("#footer-placeholder").replaceWith(data);
-      });
-    </script>
+    <script src="src/components.js" type="text/javascript" async defer></script>
+
+    <script src="src/nav-menu.js" type="text/javascript" async defer></script>
+
+    <script src="src/hamburger.js" type="text/javascript" async defer></script>
+
+
   </body>
 </html>

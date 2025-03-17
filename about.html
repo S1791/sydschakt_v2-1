@@ -53,6 +53,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
+
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -60,39 +61,83 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    
+    
     <nav>
       <nav-component></nav-component>
     </nav>
 
+    <div class="pages">
+      <a href="index.html"><img src="/img/sydschakt-logo.png" width="100px" alt="sydschakt logo"></a>
+      <a href="about.html">Om oss</a>
+      <a href="gallery.html">Galleri</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+
     <main>
       <div>
-        <h1> Hello World</h1>
+        <h1>Information om Sydschakt</h1>
       </div>
     </main>
 
-    <footer id="footer-placeholder"></footer>
+    <div class="ct-single bg-lightblue">
+      <h1>Om sydschakt</h1>
+      <p>Sydschakt är ett väletablerat medlemsägt företag, en ekonomisk förening.</p>
+        <p>Föreningen består av mindre företagare som alla äger sina egna fordon. Idag består Sydschakt av 50 engagerade delägare och ca 70 enheter.</p>
+        <p>Vår omsättning uppgår till cirka 100 miljoner kronor årligen. Vi har kontor på två orter; huvudkontor i Helsingborg och regionkontor i Malmö. </p>
+        <p>På dessa kontor jobbar totalt 5 tjänstemän som tar hand om maskinplanering, administration samt försäljning. </p>
+        <p>Med vår geografiska spridning finns det fordon i hela Öresundsregionen men skulle det finnas behov av våra tjänster på annan ort kan vi med hjälp av egna enheter eller ihop med några av våra samarbetspartners stå till ert förfogande även där</p>
 
-    <script
-    src="components/nav.js"
-    type="text/javascript"
-    async
-    defer
-    ></script>
+    </div>
+
+    <div class="ct-single bg-lightblue">
+      <h1>Sydschakts historia</h1>
+      <p>Sydschakt Ekonomisk förening startade i april 1973 på Gasverksgatan i Helsingborg. Det var då den första maskinförmedlingen av detta slag söder om Göteborg.</p>
+        <ol>
+          <li>1986 byggdes det nytt kontor i Helsingborg på Lagergatan 1 och då ihop med Orderkontoret – nuvarande GDL.</li>
+          <li>1989 beslöt föreningen att man skulle etablera sig i Malmö/Lund regionen, lokalerna hyrde man i Lund. 1991 flyttade man vidare till andra lokaler i Staffanstorp och 1998 vidare till Borrgatan 5 i Malmö.</li>
+          <li>2004 var det dags att bygga eget kontor i Helsingborg, Pinnmogatan 5. Det blev ett kontor med bra plats för medarbetare, externa hyresgäster och en plan för uppställning av maskiner och lastbilar.</li>
+          <li>2007 Gjordes en sammanslagning av Sydschakt och LBC Höganäs för att vara bredare och kunna erbjuda en helhetslösning till våra kunder. </li>
+          <li>2010 förvärvades tomten på Testvägen 2 Arlöv, dit Malmökontoret flyttade.</li>
+          <li>2021 Sålde vi fastigheten i Höganäs, LBC avyttrades och vi gick tillbaka till maskintjänster.</li>
+          <li>2023 Sydschakt fyller 50! år! Det firades med en AW i Arlöv och stor fest i Helsingborg.</li>
+      </ol>
+
+
+    </div>
+
+    <div class="ct-single bg-yellow">
+      <h1>Policy</h1>
+    </div>
+
+    <div class="ct-single bg-lightblue">
+      <h1>ISO Certificat</h1>
+    </div>
+
+    <div class="ct-single bg-yellow">
+      <h1>ABAM24</h1>
+    </div>
+
+    <div class="end"></div>
+
+     
+    <footer><footer-component></footer-component>
+    </footer>
+
+
     
-    <script src="" async defer></script>
+    <!-- <script src="" async defer></script> -->
+
+    
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script>
-      $.get("nav.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-      });
-    </script>
 
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script>
-      $.get("footer.html", function (data) {
-        $("#footer-placeholder").replaceWith(data);
-      });
-    </script>
+    <script src="src/components.js" type="text/javascript" async defer></script>
+    
+    <script src="src/nav-menu.js" type="text/javascript" async defer></script>
+
+    <script src="src/hamburger.js" type="text/javascript" async defer></script>
+
+    
   </body>
 </html>
