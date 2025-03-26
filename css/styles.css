@@ -7,6 +7,7 @@
   --lightblue: lightblue;
   --home: <a href="index.html" >Home</a>;
   --contact: <a href="contact.html" >Contact</a>;
+  --logo-size:"30px";
 }
 
 * {
@@ -124,6 +125,13 @@ footer {
 
 } */
 
+#logo {
+  display: block;
+}
+
+#logo-small {
+  display: none;
+}
 
 .footer {
   position: fixed;
@@ -419,10 +427,20 @@ a {
 
   }
 
+  #logo {
+    display: none;
+  }
   
+  .logo-small {
+    display: inline-block;
+    height: 50px;
+  }
+  
+
 .pages {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 10px 25px;
 

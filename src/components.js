@@ -32,7 +32,8 @@ class Nav extends HTMLElement {
     this.innerHTML = `
     <div class="nav-bar">
       <div id="nav-logo">
-        <a href="index.html"><img id="logotype" src="img/sydschakt-logo.png" alt="sydschakt logotype"></a>
+        <a href="index.html"><img id="logo" src="img/sydschakt-logo.png" alt="sydschakt logotype"></a>
+        <a href="index.html"><img id="logo-small" src="favicons/apple-touch-icon.png" alt="sydschakt logotype"></a>
       </div>
     <div class="nav-links">
         <ul id="nav-links">
