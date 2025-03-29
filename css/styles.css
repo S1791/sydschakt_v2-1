@@ -21,7 +21,7 @@
 h1 {
   
   font-size: 1.6rem;
-  /* margin-bottom: 3vw; */
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -56,6 +56,10 @@ body {
   
 }
 
+.last-div {
+  /* margin-bottom: 99px; */
+  }
+
  /* MARK: BG colour def */
 
  .bg-yellow {
@@ -86,8 +90,12 @@ body {
   align-items: center;
   justify-content: space-between;
   /* padding: 10px 25px; */
-  padding: 0 15px;
+  padding: 0 5%;
   background-color: var(--white);
+  height: 100px;
+  border-bottom: #030303;
+  /* border-style: solid; */
+  border-bottom: 2px solid var(--black);
 
   
 }
@@ -119,6 +127,14 @@ nav {
   padding: 20px 0 15px 0;
   z-index: 1000;
   border-bottom: 2px solid #030303;
+}
+
+#logo {
+  display: block;
+}
+
+.logo-small {
+  display: none;
 }
 
 
@@ -180,24 +196,7 @@ li a {
 
 /* MARK: Footer items */
  
-/* 
-.footer {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33%);
-  margin: 0 10%;
-  position: fixed;
-  bottom: 0;
-  
-} */
 
-
-#logo {
-  display: block;
-}
-
-.logo-small {
-  display: none;
-}
 
 .footer {
   position: fixed;
@@ -210,10 +209,12 @@ li a {
   align-items: center;
   background-color: var(--black);
 
+
 }
 
 .footer a {
   margin: 10px 0;
+  color: var(--yellow);
 }
 
 
@@ -495,6 +496,7 @@ li a {
   align-items: center;
   justify-content: space-between;
   /* padding: 10px 25px; */
+  height: 50px;
 
   
   }
